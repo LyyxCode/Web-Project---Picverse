@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picverse - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/picverse-logo.png" alt="Picverse Logo" id="logo">
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="submission.html">Submission</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="aboutus.html" class="about-btn">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-slider">
+        <div class="slides">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Embrace the Journey</h1>
+                    <p>Step into a mystical world of fire, ruins, and legends. Your adventure begins where the light meets the shadow.</p>
+                    <a href="gallery.html" class="btn">View More</a>
+                </div>
+                <img src="images/slide-1.jpg">
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Where Daydreams Meet Night Skies</h1>
+                    <p>Step into a canvas of imagination where light and shadow dance, and creativity knows no bounds. Let your ideas rise with the dawn and rest under the stars.</p>
+                    <a href="gallery.html" class="btn">View More</a>
+                </div>
+                <img src="images/slide-2.jpg">
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>City of Lights, Sky of Wonders</h1>
+                    <p>A cosmic dance above a city of the future. Dive into a canvas where technology and dreams paint the night in colors unseen.</p>
+                    <a href="gallery.html" class="btn">View More</a>
+                </div>
+                <img src="images/slide-3.jpg">
+            </div>
+        </div>
+        <button class="slider-btn prev-btn">&lt;</button>
+        <button class="slider-btn next-btn">&gt;</button>
+        <div class="dots-container">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <div class="search-container">
+            <input type="text" placeholder="Search artists or artworks...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <h2>Trending Categories</h2>
+        <div class="categories">
+            <a href="#" class="category-tag">Fantasy</a>
+            <a href="#" class="category-tag">Pixel Art</a>
+            <a href="#" class="category-tag">Digital Art</a>
+            <a href="#" class="category-tag">Illustrator</a>
+            <a href="#" class="category-tag">Nature</a>
+            <a href="#" class="category-tag">Abstract</a>
+        </div>
+    </section>
+
+
+    <section class="featured-section">
+        <div class="section-header">
+            <h2>Featured Artworks</h2>
+            <a href="gallery.html" class="view-all">View All</a>
+        </div>
+
+        <div class="artworks-grid">
+            <div class="artwork-card">
+                <div class="image-wrapper">
+                    <img src="images/art1.jpg" alt="...">
+                    <div class="artwork-overlay">
+                    <a href="gallery.html">View More</a>
+                </div>
+            </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <p>Artist</p>
+                    </div>
+                    <button class="like-btn"><i class="far fa-heart"></i>105</button>
+                </div>
+            </div>
+
+            <div class="artwork-card">
+                <div class="image-wrapper">
+                    <img src="images/art2.jpg" alt="...">
+                    <div class="artwork-overlay">
+                    <a href="gallery.html">View More</a>
+                </div>
+            </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <p>Artist</p>
+                    </div>
+                    <button class="like-btn"><i class="far fa-heart"></i>85</button>
+                </div>
+            </div>
+
+            <div class="artwork-card">
+                <div class="image-wrapper">
+                    <img src="images/art3.jpg" alt="...">
+                    <div class="artwork-overlay">
+                    <a href="gallery.html">View More</a>
+                </div>
+            </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <p>Artist</p>
+                    </div>
+                    <button class="like-btn"><i class="far fa-heart"></i>102</button>
+                </div>
+            </div>
+
+            <div class="artwork-card">
+                <div class="image-wrapper">
+                    <img src="images/art4.jpg" alt="...">
+                    <div class="artwork-overlay">
+                    <a href="gallery.html">View More</a>
+                </div>
+            </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <p>Artist</p>
+                    </div>
+                    <button class="like-btn"><i class="far fa-heart"></i>93</button>
+                </div>
+            </div>
+
+            <div class="artwork-card">
+                <div class="image-wrapper">
+                    <img src="images/art5.jpg" alt="...">
+                    <div class="artwork-overlay">
+                    <a href="gallery.html">View More</a>
+                </div>
+            </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <p>Artist</p>
+                    </div>
+                    <button class="like-btn"><i class="far fa-heart"></i>80</button>
+                </div>
+            </div>
+
+            <div class="artwork-card">
+                <div class="image-wrapper">
+                    <img src="images/art6.jpg" alt="...">
+                    <div class="artwork-overlay">
+                    <a href="gallery.html">View More</a>
+                </div>
+            </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <p>Artist</p>
+                    </div>
+                    <button class="like-btn"><i class="far fa-heart"></i>120</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="submission.html">Submission</a>
+                <a href="community.html">Community</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+            <div class="footer-copyright">
+                <img src="images/picverse-logo.png" alt="Picverse Logo" class="footer-logo">
+                <p>&copy 2022-2025 Picverse Inc.</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>

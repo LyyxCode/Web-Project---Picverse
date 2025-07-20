@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+body {
+    background-color:#000;
+    color : #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #fff;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+.nav-bar a {
+    color: #666; 
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover, .nav-bar a.active {
+    color: #000;
+}
+
+.about-btn {
+    background-color: #000;
+    color: #fff !important;
+    padding:  10px 20px 10px 20px;
+    border-radius: 15px;
+}
+
+.about-btn:hover {
+    background-color: #333;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.submission-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+
+.submission-form {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.upload-area {
+    flex: 1;
+    min-width: 200px;
+}
+
+.drop-area {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.drop-area:hover {
+    border-color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.upload-icon {
+    margin-bottom: 10px;
+}
+
+.preview-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#imagePreview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+    width: 100%;
+}
+
+.input-hint {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.ai-question {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.radio-options {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #FFC400;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.footer-logo {
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #fff;
+        padding: 80px 20px;
+        transition: right 0.3s ease;
+        z-index: 99;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav.active {
+        right: 0;
+    }
+    
+    .nav-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    body.menu-open {
+        overflow: hidden;
+    }
+    
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 98;
+    }
+    
+    .overlay.active {
+        display: block;
+    }
+
+    .submission-form {
+        flex-direction: column;
+    }
+    
+    .upload-area, .form-fields {
+        width: 100%;
+    }
+    
+    .drop-area {
+        height: 200px;
+    }
+    
+    .preview-container {
+        height: 200px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .submit-button-container {
+        justify-content: center;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}

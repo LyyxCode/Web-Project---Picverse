@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picverse - Submission</title>
+    <link rel="stylesheet" href="submisson.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/picverse-logo.png" alt="Picverse Logo" id="logo">
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="submission.html" class="active">Submission</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="aboutus.html" class="about-btn">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="submission-container">
+        <h1>Submit Your Artworks</h1>
+        <div class="submission-form">
+            <div class="upload-area">
+                <div id="dropArea" class="drop-area">
+                    <div class="upload-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14"></path>
+                            <path d="M5 12h14"></path>
+                        </svg>
+                    </div>
+                    <p>Select or drag your art here</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+                <div id="previewContainer" class="preview-container" style="display: none;">
+                    <img id="imagePreview" src="" alt="Preview">
+                    <button id="removeImage" class="remove-btn">×</button>
+                </div>
+            </div>
+            
+            <div class="form-fields">
+                <div class="form-group">
+                    <span class="input-hint">Enter your email here</span>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <span class="input-hint">Add title here</span>
+                    <input type="text" id="title" placeholder="Title" required>
+                </div>
+                
+                <div class="form-group">
+                    <span class="input-hint">Add description here</span>
+                    <textarea id="description" placeholder="Description" rows="4" required></textarea>                   
+                </div>
+                
+                <div class="form-group">
+                    <span class="input-hint">Add tags here</span>
+                    <input type="text" id="tags" placeholder="Tags">
+                </div>
+                
+                <div class="form-group">
+                    <p class="ai-question">Is this AI-Generated?</p>
+                    <div class="radio-options">
+                        <label class="radio-container">
+                            <input type="radio" name="aiGenerated" value="yes">
+                            <span class="radio-label">Yes</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="aiGenerated" value="no">
+                            <span class="radio-label">No</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="submit-button-container">
+                    <button id="submitBtn" class="submit-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="submission.html">Submission</a>
+                <a href="community.html">Community</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+            <div class="footer-copyright">
+                <img src="images/picverse-logo.png" alt="Picverse Logo" class="footer-logo">
+                <p>&copy 2022-2025 Picverse Inc.</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+    <script src="submission.js"></script>
+</body>
+</html>
